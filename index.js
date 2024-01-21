@@ -2,9 +2,10 @@
 const worksSection = document.querySelector("#Works");
 const projectsArray = [
   {
-    name: "EME Olympiad Webpage",
-    description: "This webpage is based on an annual event held in my University called EME Olympiad, which is basically an extravaganza of concerts, sport events, arts and so on.",
-    techs: ["css", "html", "Bootstrap", "JavaScript"],
+    name: "Website Pustaka Booking",
+    description:
+      "Website ini merupakan website perpustakaan online, yang dimana terdapat 2 user yaitu pengunjung dan admin. Pada pengunjung ini dapat melihat dan membooking buku, untuk admin disini berfungsi untuk memanajemen buku dan pengunjung.",
+    techs: ["css", "html", "php", "CodeIgnter"],
     featuredImage: "images/ss/emeOlympiad.png",
     featuredPopupImage: "images/ss/emeOlympiad.png",
     linkToLiveVersion: "https://zhadier.github.io/Eme-Olympiad/",
@@ -13,8 +14,8 @@ const projectsArray = [
     id: "but1",
   },
   {
-    name: "Awesome Books",
-    description: "A simple webpage where you can store all the books you have read or want to read. Made using HTML, CSS and JavaScript.",
+    name: "Kalkulator sederhana",
+    description: "Aplikasi kalulator sederhana. Dibuat dengan HTML, CSS dan JavaScript.",
     techs: ["html", "css", "JavasScript"],
     featuredImage: "images/ss/Awesome.png",
     featuredPopupImage: "images/ss/Awesome.png",
@@ -25,7 +26,7 @@ const projectsArray = [
   },
   {
     name: "To Do List",
-    description: "A simple to do list webpage where you can log the daily tasks you have to do, mark them as checked, modify them, reorder them and remove them. Made using HTML, CSS and JavaScript.",
+    description: "Aplikasi simpel to do list dimana kamu bisa mencatat tugas harian yang harus kamu lakukan, tandai tugas dengan dicentang, modifikasi, rekam dan hapus tugas. dibuat dengan HTML, CSS dan JavaScript.",
     techs: ["html", "css", "javaScript"],
     featuredImage: "images/ss/to-do-List.png",
     featuredPopupImage: "images/ss/to-do-List.png",
@@ -36,7 +37,7 @@ const projectsArray = [
   },
   {
     name: "Dice Challenge",
-    description: "A simple dice game where you test your luck to decide the winner. Created using JavaScript, html and CSS",
+    description: "Sebuah game dadu simpel dimana kamu bisa mencoba keberuntunganmu untuk menentukan pemenangnya. Dibuat dengan JavaScript, Html and CSS",
     techs: ["html", "css", "JavaScript"],
     featuredImage: "images/ss/dice.png",
     featuredPopupImage: "images/ss/dice.png",
@@ -46,9 +47,9 @@ const projectsArray = [
     id: "but4",
   },
   {
-    name: "Profesional Art Printing Data",
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
-    techs: ["html", "Bootstrap", "Ruby"],
+    name: "Aplikasi membaca komik",
+    description: "Sebuah aplikasi untuk membaca komik dan novel .",
+    techs: ["Java", "Eclipse", "Apps"],
     featuredImage: "images/proj-img.svg",
     featuredPopupImage: "images/Snapshoot-Portfolio.svg",
     linkToLiveVersion: "https://zhadier.github.io/My-Portofolio/",
@@ -57,9 +58,9 @@ const projectsArray = [
     id: "but5",
   },
   {
-    name: "Data Dashboard Healthcare",
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
-    techs: ["html", "Bootstrap", "Ruby"],
+    name: "Game Street Fighting",
+    description: "Aplikasi game yang bertema pertarungan jalanan. Game ini dibuat menggunakan Greenfoot.",
+    techs: ["Java", "Greenfoot", "Apps"],
     featuredImage: "images/p2d.svg",
     featuredPopupImage: "images/Snapshoot-Portfolio.svg",
     linkToLiveVersion: "https://zhadier.github.io/My-Portofolio/",
@@ -68,9 +69,9 @@ const projectsArray = [
     id: "but6",
   },
   {
-    name: "Website Protfolio",
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
-    techs: ["html", "Bootstrap", "Ruby"],
+    name: "Tic tac tou",
+    description: "Sebuah game sederhana yang dapat dimainkan 2 orang.",
+    techs: ["Html", "Css", "JavaScript"],
     featuredImage: "images/p3d.svg",
     featuredPopupImage: "images/Snapshoot-Portfolio.svg",
     linkToLiveVersion: "https://zhadier.github.io/My-Portofolio/",
@@ -90,9 +91,9 @@ function creatProject(project) {
       </div>
       <ul>
           <li><a href="https://en.wikipedia.org/wiki/HTML" class="program-Link">${project.techs[0]}</a></li>
-          <li><a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
+          <li><a href="https://en.wikipedia.org/wiki/PHP"
                   class="program-Link">${project.techs[1]}</a></li>
-          <li><a href="https://en.wikipedia.org/wiki/Ruby" class="program-Link">${project.techs[2]}</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/JavaScript" class="program-Link">${project.techs[2]}</a></li>
       </ul>
       <button class="project-Button" id="${project.id}">See Project</button>
   </div>
@@ -107,9 +108,9 @@ function creatProject(project) {
     const project1tech = document.querySelector(".project1 ul");
     project1tech.innerHTML = `<li><a href="https://en.wikipedia.org/wiki/CSS" class="program-Link">${project.techs[0]}</a></li>
     <li><a href="https://en.wikipedia.org/wiki/HTML" class="program-Link">${project.techs[1]}</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
+    <li><a href="https://en.wikipedia.org/wiki/PHP"
             class="program-Link">${project.techs[2]}</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Ruby" class="program-Link">${project.techs[3]}</a></li>`;
+    <li><a href="https://en.wikipedia.org/wiki/CodeIgniter" class="program-Link">${project.techs[3]}</a></li>`;
   } else {
     document.querySelector(`.${project.class}`).setAttribute("style", `background: url(${project.featuredImage}) center; background-repeat: no-repeat; background-size: cover;`);
   }
