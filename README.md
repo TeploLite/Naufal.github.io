@@ -1,16 +1,16 @@
 # Website Portofolio
 ## LIVE DEMO
-### https://iamkrishnaa.github.io/portofolio-website/
+### https://teplolite.github.io/Naufal.github.io/
 ### This is portfolio_website by Naufal
 ### Please star this repo and follow me here on Github so that other can find this repository.
 
 # Technologies Used
 
 ### HTML
-63.7%
+15.3%
  
 ### CSS
-31.1%
+61.4%
  
 ### JavaScript
-5.2%
+23.3%
